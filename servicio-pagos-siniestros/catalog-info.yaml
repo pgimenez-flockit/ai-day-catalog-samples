@@ -1,0 +1,19 @@
+apiVersion: catalog/v1
+name: Servicio de Pagos de Siniestros
+type: SERVICE
+description: >
+  Servicio backend para el módulo de pagos de siniestros. Permite consultar reservas activas,
+  notas y atenciones comerciales asociadas a un siniestro. Úselo desde las pantallas de
+  liquidación y pago.
+owner: Equipo Siniestros
+install: com.acme.insurance:claims-payment-service:1.0.0
+usageExample: |
+  GET /reservas-activas
+  GET /notas
+  GET /atenciones-comerciales
+tags: [siniestros, pagos, java, spring-boot, rest]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Cliente de Pólizas
+type: LIBRARY
+description: >
+  Librería cliente para consultar pólizas desde otros servicios sin conocer los detalles del
+  servicio que las expone. Incluye contratos, modelos de respuesta y repositorios de acceso.
+  Úsela cuando necesite datos de una póliza dentro de un proceso de negocio.
+owner: Equipo Pólizas
+install: com.acme.insurance:policy-manager:2.0.0
+usageExample: |
+  @Autowired
+  private PolicyManager policyManager;
+
+  PolicyResponse poliza = policyManager.findById(numeroPoliza);
+tags: [polizas, java, spring-boot, cliente, libreria]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

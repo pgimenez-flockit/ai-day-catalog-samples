@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Template de Librerías Angular
+type: TOOL
+description: >
+  Arquetipo base para crear librerías Angular internas empaquetadas con ng-packagr y publicadas
+  en el registry npm privado. El alta de una librería nueva está automatizada a partir de este
+  template. Usarlo para compartir componentes o servicios entre aplicaciones y web components.
+owner: Equipo Arquitectura
+install: npm i @acme-libs/<nombre-libreria>
+usageExample: |
+  import { NgAcmeLibraryModule } from '@acme-libs/ng-acme-library';
+
+  @NgModule({ imports: [NgAcmeLibraryModule] })
+  export class AppModule {}
+tags: [template, angular, libreria, ng-packagr, npm]
+stack:
+  language: typescript
+  languageVersion: "5.5.4"
+  framework: angular
+  frameworkVersion: "18.2.9"

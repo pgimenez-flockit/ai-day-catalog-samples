@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Librería Interceptor de Autenticación (Angular)
+type: LIBRARY
+description: >
+  Librería Angular que agrega el token de autenticación a las llamadas HTTP mediante un
+  interceptor. Es una versión anterior construida sobre Angular 11; para aplicaciones nuevas
+  conviene verificar si existe una alternativa en las librerías Angular actuales.
+owner: Equipo Arquitectura
+install: npm i @acme-libs/angular-auth-interceptor
+usageExample: |
+  import { AngularAuthInterceptorModule } from '@acme-libs/angular-auth-interceptor';
+
+  @NgModule({ imports: [AngularAuthInterceptorModule] })
+  export class AppModule {}
+tags: [angular, libreria, autenticacion, http, legacy]
+stack:
+  language: typescript
+  languageVersion: "4.0.2"
+  framework: angular
+  frameworkVersion: "11.0.9"

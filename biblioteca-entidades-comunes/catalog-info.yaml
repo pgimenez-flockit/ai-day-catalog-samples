@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Biblioteca de Entidades Comunes
+type: LIBRARY
+description: >
+  Modelo de dominio compartido con las entidades y objetos de transferencia que reutilizan
+  varios servicios del negocio asegurador. Úsela para evitar duplicar clases de datos entre
+  microservicios.
+owner: Equipo Plataforma Backend
+install: com.acme.insurance:common-entities:0.5.0
+usageExample: |
+  import com.acme.insurance.entities.Persona;
+
+  Persona asegurado = new Persona();
+  asegurado.setNombre("Juan");
+tags: [dominio, java, spring-boot, entidades, libreria]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

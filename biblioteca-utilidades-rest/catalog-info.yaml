@@ -1,0 +1,21 @@
+apiVersion: catalog/v1
+name: Biblioteca de Utilidades para Servicios REST
+type: LIBRARY
+description: >
+  Conjunto de utilidades reutilizables para servicios REST: clientes HTTP reactivos, procesamiento
+  de documentos PDF y de metadatos de imágenes. Úsela cuando un servicio necesite intercambiar
+  datos con otros sistemas o manipular archivos adjuntos.
+owner: Equipo Plataforma Backend
+install: com.acme.insurance:rest-commons:2.0.0
+usageExample: |
+  @Autowired
+  private WebClient.Builder webClientBuilder;
+
+  // Extraer texto de un PDF adjunto
+  String texto = PdfUtils.extractText(archivo.getInputStream());
+tags: [plataforma, java, spring-boot, rest, pdf, libreria]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

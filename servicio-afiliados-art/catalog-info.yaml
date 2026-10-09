@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Servicio de Afiliados ART
+type: SERVICE
+description: >
+  Servicio backend del seguro de riesgos del trabajo que expone datos de afiliados, exámenes
+  médicos, prestaciones dinerarias y reportes. Úselo desde los portales de empleadores y
+  trabajadores para consultar la situación de un afiliado.
+owner: Equipo ART
+install: com.acme.insurance:art-members-service:1.0.0
+usageExample: |
+  GET /afiliado
+  GET /examenes
+  GET /documentos
+  GET /prestaciones-dinerarias
+tags: [art, afiliados, java, spring-boot, rest, openapi]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

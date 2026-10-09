@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Template de Web Components Angular
+type: TOOL
+description: >
+  Arquetipo base para crear web components (Custom Elements) con Angular Elements, listos para
+  publicarse en el CDN y cargarse desde el portal. Incluye Bootstrap, linting, git hooks y
+  configuración de tests. Usarlo como punto de partida en lugar de configurar un proyecto desde cero.
+owner: Equipo Arquitectura
+install: git clone <template-web-components> mi-web-component && cd mi-web-component && npm install
+usageExample: |
+  npm run build:elements   # genera elements/bundle.js y elements/bundle.css
+
+  <script src="https://cdn.acme.example/wcs/mi-componente/bundle.js"></script>
+  <acme-mi-componente></acme-mi-componente>
+tags: [template, angular, web-components, angular-elements, frontend]
+stack:
+  language: typescript
+  languageVersion: "5.5.4"
+  framework: angular
+  frameworkVersion: "18.2.9"

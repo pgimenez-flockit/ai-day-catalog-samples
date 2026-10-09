@@ -1,0 +1,23 @@
+apiVersion: catalog/v1
+name: Biblioteca Común de Microservicios
+type: LIBRARY
+description: >
+  Librería compartida que centraliza el manejo estandarizado de errores, la seguridad OAuth2
+  y la configuración transversal de los microservicios Java. Úsela como dependencia en todo
+  microservicio nuevo para obtener respuestas de error uniformes y clientes Feign tipificados.
+owner: Equipo Plataforma Backend
+install: com.acme.insurance:platform-common:2.4.0
+usageExample: |
+  <dependency>
+    <groupId>com.acme.insurance</groupId>
+    <artifactId>platform-common</artifactId>
+    <version>2.4.0</version>
+  </dependency>
+  # application.yml
+  acme.exceptions.code-prefix: POL
+tags: [plataforma, java, spring-boot, errores, oauth2, libreria]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.12"

@@ -1,0 +1,18 @@
+apiVersion: catalog/v1
+name: Servicio de Presentaciones ART
+type: SERVICE
+description: >
+  Servicio backend que gestiona la conexión con el organismo regulador de riesgos del trabajo
+  y la creación de presentaciones de servicios, con consulta de tablas de referencia. Úselo
+  para el envío periódico de información regulatoria.
+owner: Equipo ART
+usageExample: |
+  POST /login
+  GET /serviciosNoOrds
+  POST /crearPresentacion
+tags: [art, regulador, java, spring-boot, rest, legacy]
+stack:
+  language: java
+  languageVersion: "8"
+  framework: spring-boot
+  frameworkVersion: "2.5.5"

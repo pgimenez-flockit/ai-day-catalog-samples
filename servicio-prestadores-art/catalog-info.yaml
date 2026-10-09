@@ -1,0 +1,19 @@
+apiVersion: catalog/v1
+name: Servicio de Prestadores Médicos ART
+type: SERVICE
+description: >
+  Servicio de administración de prestadores médicos de la cartera de riesgos del trabajo.
+  Permite consultar prestadores, sus datos complementarios y sus subprestadores. Úselo desde
+  los módulos de administración y autorización de prestaciones.
+owner: Equipo Prestadores
+install: com.acme.insurance:providers-service:1.0.0
+usageExample: |
+  GET /prestadores
+  GET /prestadores-art/datos-complementarios
+  GET /prestadores-art/{codPrestador}/get-subprestadores
+tags: [art, prestadores, java, spring-boot, rest, openapi]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.4.1"

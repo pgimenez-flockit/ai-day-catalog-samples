@@ -1,0 +1,19 @@
+apiVersion: catalog/v1
+name: App de Prueba de Pipeline CI/CD Angular
+type: TOOL
+description: >
+  Aplicación Angular mínima usada para validar el pipeline de integración y despliegue continuo
+  (build, tests y empaquetado en contenedor). Sirve como referencia para configurar el CI/CD de
+  proyectos frontend; no es una aplicación de negocio.
+owner: Equipo Arquitectura
+status: DEPRECATED
+usageExample: |
+  npm install
+  npm run build
+  docker build -t app-prueba-pipeline .
+tags: [cicd, angular, docker, pipeline, legacy]
+stack:
+  language: typescript
+  languageVersion: "4.1.2"
+  framework: angular
+  frameworkVersion: "11.1.2"

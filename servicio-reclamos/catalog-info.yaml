@@ -1,0 +1,19 @@
+apiVersion: catalog/v1
+name: Servicio de Reclamos
+type: SERVICE
+description: >
+  Servicio para la gestión de reclamos de clientes y terceros: alta de reclamos con adjuntos,
+  seguimiento de incidencias y administración de personas involucradas. Está en desuso y se
+  reemplaza por el nuevo módulo de reclamos.
+owner: Equipo Siniestros
+status: DEPRECATED
+usageExample: |
+  GET /api/issues
+  POST /api/issues/upload_attached
+  GET /api/person
+tags: [reclamos, java, spring-boot, rest, legacy]
+stack:
+  language: java
+  languageVersion: "8"
+  framework: spring-boot
+  frameworkVersion: "1.5.10"

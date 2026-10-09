@@ -1,0 +1,18 @@
+apiVersion: catalog/v1
+name: Servicio de Renovaciones
+type: SERVICE
+description: >
+  Servicio backend para la emisión de renovaciones de pólizas. Permite buscar y visualizar
+  listados de emisión, descargarlos y emitir renovaciones masivas. Pendiente de migración
+  a la plataforma actual.
+owner: Equipo Pólizas
+usageExample: |
+  POST /listado-emision/buscar-visualizar
+  POST /listado-emision/descargar
+  POST /listado-emision/emitir
+tags: [polizas, renovaciones, java, spring-boot, rest, legacy]
+stack:
+  language: java
+  languageVersion: "8"
+  framework: spring-boot
+  frameworkVersion: "2.5.5"

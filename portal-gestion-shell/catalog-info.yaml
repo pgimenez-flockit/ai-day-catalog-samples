@@ -1,0 +1,18 @@
+apiVersion: catalog/v1
+name: Portal de Gestión (shell)
+type: FEATURE
+description: >
+  Aplicación Angular contenedora (shell) del portal interno de gestión. Aloja los módulos de
+  negocio (cotizaciones, emisión, cuentas corrientes, conciliaciones, entre otros) y carga web
+  components de forma dinámica. Usarla como punto de entrada para sumar nuevas pantallas al portal.
+owner: Equipo Frontend
+usageExample: |
+  npm install
+  npm run local      # levanta el shell contra servicios locales
+  npm run build-prod # genera el build productivo
+tags: [frontend, angular, shell, portal, web-components]
+stack:
+  language: typescript
+  languageVersion: "5.5.4"
+  framework: angular
+  frameworkVersion: "18.2.14"

@@ -1,0 +1,20 @@
+apiVersion: catalog/v1
+name: Servicio Cliente de Agencia Tributaria
+type: SERVICE
+description: >
+  Servicio que encapsula la conexión con los web services del organismo tributario nacional.
+  Expone endpoints REST para validar comprobantes, consultar datos de personas por CUIT y
+  verificar comprobantes por lote. Úselo en lugar de integrar directamente los servicios externos.
+owner: Equipo Integraciones
+install: com.acme.insurance:tax-agency-client:1.0.0
+usageExample: |
+  GET /tax/person-registry/getPerson/{cuit}
+
+  POST /tax/vouchers/validateInvoice
+  Content-Type: application/json
+tags: [integraciones, impuestos, java, spring-boot, rest, soap]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.5.4"

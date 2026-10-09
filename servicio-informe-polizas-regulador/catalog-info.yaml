@@ -1,0 +1,18 @@
+apiVersion: catalog/v1
+name: Servicio de Informe de Pólizas al Regulador
+type: SERVICE
+description: >
+  Servicio que informa altas de pólizas y cauciones al organismo regulador del seguro.
+  Protegido con OAuth2 como servidor de recursos. Está en desuso y se mantiene solo por
+  compatibilidad hasta completar la migración.
+owner: Equipo Pólizas
+status: DEPRECATED
+usageExample: |
+  PUT /polizas/alta
+  GET /caucion
+tags: [polizas, regulador, java, spring-boot, oauth2, legacy]
+stack:
+  language: java
+  languageVersion: "8"
+  framework: spring-boot
+  frameworkVersion: "1.4.2"

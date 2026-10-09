@@ -1,0 +1,19 @@
+apiVersion: catalog/v1
+name: Servicio de Autenticación SSO
+type: SERVICE
+description: >
+  Servicio de inicio de sesión único que valida credenciales contra el proveedor de identidad
+  corporativo y emite el contexto de usuario para las aplicaciones. Úselo como punto único
+  de autenticación de frontends y servicios.
+owner: Equipo Seguridad
+usageExample: |
+  POST /login-sso
+  Content-Type: application/json
+
+  { "usuario": "jperez", "token": "<token-del-proveedor>" }
+tags: [seguridad, sso, java, spring-boot, spring-security, rest]
+stack:
+  language: java
+  languageVersion: "21"
+  framework: spring-boot
+  frameworkVersion: "3.4.2"
